@@ -16,3 +16,6 @@
     * Branch: **main**
     * 2 cores, 8GB RAM, 32 GB storage
 9. Aguarde o Codespace ser criado. Ao final, o repositório será aberto no editor.
+
+npx expo start
+npx expo start --tunnel
