@@ -1,14 +1,11 @@
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default function DetailsScreen({ navigation }) {
+export default function ProfileScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Tela de Detalhes</Text>
+      <Text style={styles.title}>Tela de Perfil</Text>
+      <Text>Informações do perfil serão exibidas aqui.</Text>
       <Button title="Voltar" onPress={() => navigation.goBack()} />
-      <Button
-        title="Ir para Perfil"
-        onPress={() => navigation.navigate('Perfil')}
-      />
     </View>
   );
 }
@@ -20,5 +17,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
-  titulo: { fontSize: 24, color: '#007AFF' },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#FF0000',
+  },
 });
