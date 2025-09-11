@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
+import PerfilScreen from './screens/Perfil';
 const Stack = createNativeStackNavigator();
 export default function App() {
  return (
@@ -9,6 +10,11 @@ export default function App() {
  <Stack.Navigator>
  <Stack.Screen name="Início" component={HomeScreen} />
  <Stack.Screen name="Detalhes" component={DetailsScreen} />
+<Stack.Screen 
+          name="Perfil" 
+          component={PerfilScreen} 
+          options={{ title: 'Perfil' }}
+        />
  </Stack.Navigator>
  </NavigationContainer>
  );
