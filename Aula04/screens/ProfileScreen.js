@@ -11,5 +11,5 @@ export default function ProfileScreen({ navigation }){
 
 const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-    titulo: { fontSize: 26, color: '#ff007bff' }
+    titulo: { fontSize: 26, color: '#ff007bff', fontWeight: 'bold' }
     });
