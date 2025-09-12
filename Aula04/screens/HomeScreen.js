@@ -12,5 +12,6 @@ export default function HomeScreen({ navigation }) {
 }
 const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-    titulo: { fontSize: 24, fontWeight: 'bold' }
+    titulo: { fontSize: 24, fontWeight: 'bold' },
+    
 });
