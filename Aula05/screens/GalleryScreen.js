@@ -1,28 +1,32 @@
-import { View, Image, StyleSheet, Text } from 'react-native';
+import { SafeAreaView, ScrollView, View, Image, StyleSheet, Text } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function GalleryScreen() {
   return (
-    <View style={styles.container}>
-      {/* Ícone no topo */}
-      <MaterialCommunityIcons name="camera" size={80} color="purple" style={styles.icon} />
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+        <View style={styles.container}>
+          {/* Ícone no topo */}
+          <MaterialCommunityIcons name="camera" size={80} color="purple" style={styles.icon} />
 
-      <Text style={styles.title}>Minha Galeria</Text>
+          <Text style={styles.title}>Minha Galeria</Text>
 
-      {/* 3 imagens da internet */}
-      <Image
-        source={{ uri: 'https://picsum.photos/200/300?random=1' }}
-        style={styles.imagem}
-      />
-      <Image
-        source={{ uri: 'https://picsum.photos/200/300?random=2' }}
-        style={styles.imagem}
-      />
-      <Image
-        source={{ uri: 'https://picsum.photos/200/300?random=3' }}
-        style={styles.imagem}
-      />
-    </View>
+          {/* 3 imagens da internet */}
+          <Image
+            source={{ uri: 'https://picsum.photos/200/300?random=1' }}
+            style={styles.imagem}
+          />
+          <Image
+            source={{ uri: 'https://picsum.photos/200/300?random=2' }}
+            style={styles.imagem}
+          />
+          <Image
+            source={{ uri: 'https://picsum.photos/200/300?random=3' }}
+            style={styles.imagem}
+          />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 

@@ -1,30 +1,34 @@
-import { View, Image, StyleSheet, Button } from 'react-native';
+import { SafeAreaView, ScrollView, View, Image, StyleSheet, Button } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 export default function HomeScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Image source={require('../assets/logo.png')} style={styles.imagem} />
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+        <View style={styles.container}>
+          <Image source={require('../assets/logo.png')} style={styles.imagem} />
 
-      <Image
-        source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
-        style={{ width: 100, height: 100 }}
-      />
+          <Image
+            source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
+            style={{ width: 100, height: 100 }}
+          />
 
-      <FontAwesome name="home" size={80} color="blue" />
-      <MaterialCommunityIcons name="horse-variant-fast" size={80} color="green" />
+          <FontAwesome name="home" size={80} color="blue" />
+          <MaterialCommunityIcons name="horse-variant-fast" size={80} color="green" />
 
-      <Button
-        title="Perfil"
-        onPress={() => navigation.navigate('Perfil')}
-      />
+          <Button
+            title="Perfil"
+            onPress={() => navigation.navigate('Perfil')}
+          />
 
-      <Button
-        title="Galeria"
-        onPress={() => navigation.navigate('Galeria')}
-      />
-    </View>
+          <Button
+            title="Galeria"
+            onPress={() => navigation.navigate('Galeria')}
+          />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
