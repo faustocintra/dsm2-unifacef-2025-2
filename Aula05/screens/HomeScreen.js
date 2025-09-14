@@ -1,20 +1,16 @@
-import { View, Image, StyleSheet, Button } from 'react-native';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/logo.png')} style={styles.imagem} />
-      <Image
-        source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
-        style={{ width: 100, height: 100 }}
-      />
-      <FontAwesome name="home" size={80} color="blue" />
-      <MaterialCommunityIcons name="horse-variant-fast" size={80} color="green" />
+      <Text style={styles.titulo}>Tela Inicial</Text>
       <Button
-        title="Perfil"
-        onPress={() => navigation.navigate('Perfil')}
+        title="Ir para Detalhes"
+        onPress={() => navigation.navigate('Detalhes')}
+      />
+      <Button
+        title="Ver Galeria"
+        onPress={() => navigation.navigate('Galeria')} // Adiciona um botão para a galeria
       />
     </View>
   );

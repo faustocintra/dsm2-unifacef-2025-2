@@ -1,7 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import HomeScreen from './screens/HomeScreen';
-import ProfileScreen from './screens/ProfileScreen'
+import DetailsScreen from './screens/DetailsScreen';
+import GalleryScreen from './screens/GalleryScreen'; // Importe a nova tela
 
 const Stack = createNativeStackNavigator();
 
@@ -10,8 +12,9 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Início" component={HomeScreen} />
-        <Stack.Screen name="Perfil" component={ProfileScreen} />
+        <Stack.Screen name="Detalhes" component={DetailsScreen} />
+        <Stack.Screen name="Galeria" component={GalleryScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
+}
