@@ -3,25 +3,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
-import ProfileScreen from './screens/ProfileScreen';
+import ProfileScreen from './screens/ProfileScreen'; // Importe a nova tela
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerTitleAlign: 'center',
-          headerShadowVisible: false,
-        }}
-      >
+      <Stack.Navigator>
         <Stack.Screen name="Início" component={HomeScreen} />
         <Stack.Screen name="Detalhes" component={DetailsScreen} />
         <Stack.Screen
           name="Perfil"
           component={ProfileScreen}
-          options={{ title: 'Meu Perfil 👤' }} // título personalizado
+          options={{ title: 'Meu Perfil' }} 
         />
       </Stack.Navigator>
     </NavigationContainer>
