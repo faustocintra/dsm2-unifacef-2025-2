@@ -15,11 +15,18 @@ export default function HomeScreen({ navigation }) {
       <Button
         title="Perfil"
         onPress={() => navigation.navigate('Perfil')}
+        style={{ marginBottom: 20 }}
+      />
+      <Button
+        title="Galeria"
+        color="#4F8EF7"
+        onPress={() => navigation.navigate('Galeria')}
+        style={{ marginTop: 20 }}
       />
     </View>
   );
 }
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center', gap: 20 },
   imagem: { width: 200, height: 200, resizeMode: 'contain' }
 });
