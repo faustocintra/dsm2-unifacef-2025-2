@@ -17,3 +17,6 @@ export default function App() {
     </NavigationContainer>
   );
 };
+
+
+// Configuração básica de navegação entre três telas usando React Navigation

@@ -18,3 +18,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+// Configuração básica de um aplicativo React Native com uma única tela exibindo texto centralizado
