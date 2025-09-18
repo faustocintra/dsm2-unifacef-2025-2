@@ -35,15 +35,9 @@ export default function GaleriaScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#f0f0f0',
   },
   imagem: {
-    width: 300,
-    height: 200,
-    borderRadius: 10,
-    marginVertical: 10,
+    width: 300, height: 200, borderRadius: 10, marginVertical: 10,
   },
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, StyleSheet, Image } from 'react-native'; // Adicionado Image
+import { View, Button, StyleSheet, Image } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
@@ -21,9 +21,7 @@ export default function HomeScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1, justifyContent: 'center', alignItems: 'center',
   },
   espaco: {
     marginVertical: 10,

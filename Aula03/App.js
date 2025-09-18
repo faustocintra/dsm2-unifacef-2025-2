@@ -19,13 +19,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20, 
   },
   title: {
-    fontSize: 32, 
-    fontWeight: 'bold', 
-    color: '#fff', 
-    marginBottom: 8, 
+    fontSize: 32, fontWeight: 'bold', color: '#fff', marginBottom: 8, 
   },
   subtitle: {
-    fontSize: 18, 
-    color: '#a0a0a0', 
+    fontSize: 18, color: '#a0a0a0', 
   },
 });

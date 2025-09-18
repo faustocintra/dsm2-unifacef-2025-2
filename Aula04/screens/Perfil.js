@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
@@ -13,12 +12,9 @@ export default function ProfileScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1, justifyContent: 'center', alignItems: 'center',
   },
   titulo: {
-    fontSize: 24,
-    color: '#007AFF',
+    fontSize: 24, color: '#007AFF',
   },
 });
