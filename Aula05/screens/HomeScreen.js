@@ -1,25 +1,39 @@
-import { View, Image, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 export default function HomeScreen({ navigation }) {
-  return (
-    <View style={styles.container}>
-      <Image source={require('../assets/logo.png')} style={styles.imagem} />
-      <Image
-        source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
-        style={{ width: 100, height: 100 }}
-      />
-      <FontAwesome name="home" size={80} color="blue" />
-      <MaterialCommunityIcons name="horse-variant-fast" size={80} color="green" />
-      <Button
-        title="Perfil"
-        onPress={() => navigation.navigate('Perfil')}
-      />
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <FontAwesome name="home" size={40} color="blue" />
+            <Text style={styles.titulo}>Tela Inicial</Text>
+            <View style={styles.botoes}>
+                <TouchableOpacity
+                    style={styles.botao}
+                    onPress={() => navigation.navigate('Perfil')}
+                >
+                    <Text style={styles.textoBotao}>Ir para Perfil</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    style={styles.botao}
+                    onPress={() => navigation.navigate('Galeria')}
+                >
+                    <Text style={styles.textoBotao}>Ir para Galeria</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+    );
 }
+
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-  imagem: { width: 200, height: 200, resizeMode: 'contain' }
+    container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+    titulo: { fontSize: 20, marginTop: 10 },
+    botoes: { flexDirection: 'row', gap: 10, padding: 10 },
+    botao: {
+        backgroundColor: 'blue',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 40,
+    },
+    textoBotao: { color: '#fff', fontSize: 16 },
 });
