@@ -12,7 +12,7 @@
     * **Remote Explorer** da Microsoft. Após instalada, essa extensão adicionará um novo ícone à barra esquerda vertical do VS Code.
 7. Clique sobre o novo ícone, será aberto um painel. Na parte superior, caso haja uma caixa de seleção, escolha GitHub Codespaces. Em seguida, na parte inferior, clique sobre `Sign In to GitHub` e siga as instruções na tela.
 8. Ao retornar para o VS Code após ter feito _login_ no GitHub, haverá um novo botão, `Create Codespace`. Clique sobre ele e vá respondendo às perguntas.
-    * ao ser perguntado sobre o repositório para o qual deseja criar um novo Codespace, selecione o seu repositório _forkado_ da disciplina (`<SEU_USUARIO>/dsm2-unifacef-2025-2`).
+    * ao ser perguntado sobre o repositório para o qual deseja criar um novo Codespace, selecione o seu repositório _forkado_ da disciplina (`<SEU_USUARIO>/dsm2-unifacef-2025-2`)..
     * Branch: **main**
     * 2 cores, 8GB RAM, 32 GB storage
 9. Aguarde o Codespace ser criado. Ao final, o repositório será aberto no editor.
