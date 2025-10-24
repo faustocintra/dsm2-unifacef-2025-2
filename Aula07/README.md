@@ -22,8 +22,10 @@ O foco desta atividade foi a **otimização de listas** e o **layout adaptável*
 
 As imagens abaixo demonstram o funcionamento da listagem, o agrupamento por categoria (`SectionList`) e a funcionalidade de busca e filtro.
 
-![📸 Captura de tela do catálogo completo](../Aula07/printsAPP/cap3.png)
 
-![🔍 Captura de tela do catálogo com filtro aplicado](../Aula07/printsAPP/cap1.png)
+<img width="1882" height="383" alt="cap1" src="https://github.com/user-attachments/assets/7c2ed30b-05f6-4f01-b83d-db19d1ce7730" />
 
-![💡 Captura de tela detalhada da seção Eletrônicos](../Aula07/printsAPP/cap2.png)
+
+<img width="1867" height="937" alt="cap3" src="https://github.com/user-attachments/assets/ea1d3de8-e30d-493e-ba70-6e08152d9406" />
+
+<img width="1862" height="901" alt="cap2" src="https://github.com/user-attachments/assets/083f0b68-0697-4d98-be29-9a6affa7c860" />
